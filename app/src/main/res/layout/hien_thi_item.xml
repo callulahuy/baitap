@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="400dp"
+    android:minWidth="500dp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginHorizontal="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvMaNV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mã NV"
+                android:padding="3dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/tvTenNV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tên nhân viên"
+                android:padding="5dp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/tvGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Giới tính"
+                android:padding="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

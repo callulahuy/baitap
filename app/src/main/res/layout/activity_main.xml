@@ -19,6 +19,7 @@
     </TextView>
 
     <EditText
+        android:id="@+id/etMaNV"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:hint="Mã NV">
@@ -34,6 +35,7 @@
     </TextView>
 
     <EditText
+        android:id="@+id/etTenNV"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:hint="Tên NV">
@@ -51,11 +53,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/rbNam"
             android:text="Nam"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <RadioButton
+            android:id="@+id/rbNu"
             android:text="Nữ"
             android:layout_weight="1"
             android:layout_width="wrap_content"
@@ -63,14 +67,46 @@
     </RadioGroup>
 
     <Button
+        android:id="@+id/btNhap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="NHẬP NV">
 
     </Button>
-    <ListView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:padding="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvXemDS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:text="Danh sách nhân viên"
+            android:textSize="25sp"
+            android:paddingLeft="7dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#b548"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_clear_black_24dp"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvDSNV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>
